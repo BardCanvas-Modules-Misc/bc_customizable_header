@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+    
+    <display_name>BC Customizable Header Logo</display_name>
+    
+    <description><![CDATA[
+        Adds a logo bar at the header that can be customized.<br>
+        Included as part of the base bundle.
+    ]]></description>
+    
+    <settings_data>
+        <title>Customizable Header Logo</title>
+        
+        <specs key="position">
+            <title>Logo position</title>
+            <description><![CDATA[
+                Show the logo bar at the desired position in the header.<br>
+                If you want to <b>not</b> show it, just go to the
+                <a href="{$full_root_url}/modules_manager/">Modules manager</a>
+                and disable this module.
+            ]]></description>
+            <type>list</type>
+            <options>
+                <option value="above_menu">Above the menu bar</option>
+                <option value="below_menu">Below the menu bar</option>
+            </options>
+        </specs>
+        
+        <specs key="background_image">
+            <title>Background image</title>
+            <description><![CDATA[
+                There is a background image included in this module and it is set by default.<br>
+                If you want to change it, you can use the Media Manager to upload one to
+                suit your needs.<br>
+                <i class="fa fa-info-circle"></i>
+                The included background dimensions are <code>1920x100</code> pixels.
+                If you intend to replace it, you should use one with similar size.
+            ]]></description>
+            <type>@gallery:specs_renderer/image_selector</type>
+            <options>
+                <image_size>full</image_size>
+            </options>
+        </specs>
+        
+        <specs key="icon_image">
+            <title>Logo icon</title>
+            <description><![CDATA[
+                The BardCanvas logo icon is included in this module and shown by default.<br>
+                If you want to change it, you can use the Media Manager to upload one to
+                suit your needs. It will be automatically adjusted to fit into the designated area.
+            ]]></description>
+            <type>@gallery:specs_renderer/image_selector</type>
+            <options>
+                <image_size>full</image_size>
+            </options>
+        </specs>
+        
+        <specs key="icon_caption">
+            <title>Icon caption</title>
+            <description><![CDATA[
+                Type the caption you want to show next to the logo icon at the left of the bar.<br>
+                If empty, it will show the contents of the <code>engine.website_name</code>
+                setting.
+            ]]></description>
+            <type>text</type>
+        </specs>
+        
+        <specs key="site_legend">
+            <title>Site slogan</title>
+            <description><![CDATA[
+                Type the caption you want to show at the right of the bar.
+                You can use basic HTML to tweak formatting.<br>
+                Nothing will be shown if ommited.
+            ]]></description>
+            <type>code</type>
+        </specs>
+        
+    </settings_data>
+    
+</language>

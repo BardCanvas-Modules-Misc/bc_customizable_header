@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+    
+    <version>1.0</version>
+    <group>modules_misc</group>
+    
+    <working_flags>
+        <install>true</install>
+        <uninstall>true</uninstall>
+        <enable>true</enable>
+        <disable>true</disable>
+    </working_flags>
+    
+    <template_includes>
+        <html_head>head_scripts.inc</html_head>
+        <header_top>header_top.inc</header_top>
+        <header_bottom>header_bottom.inc</header_bottom>
+    </template_includes>
+    
+</module>

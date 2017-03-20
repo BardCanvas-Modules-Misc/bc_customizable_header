@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<language>
+    
+    <display_name>BC Encabezado con Logo Personalizable</display_name>
+    
+    <description><![CDATA[
+        Añade una barra de logo en el encabezado que puede personalizarse.<br>
+        Incluído como parte del paquete base.
+    ]]></description>
+    
+    <settings_data>
+        <title>Encabezado Personalizable</title>
+        
+        <specs key="position">
+            <title>Posición del logo</title>
+            <description><![CDATA[
+                Muestra la barra de logo en la posición deseada del encabezado.<br>
+                De desear <b>no</b> mostrarlo, desactivar este módulo en el
+                <a href="{$full_root_url}/modules_manager/">Administrador de módulos</a>.
+            ]]></description>
+            <type>list</type>
+            <options>
+                <option value="above_menu">Por encima de la barra de menú</option>
+                <option value="below_menu">Por debajo de la barra de menú</option>
+            </options>
+        </specs>
+        
+        <specs key="background_image">
+            <title>Imagen de fondo</title>
+            <description><![CDATA[
+                Se incluye un fondo genérico en este módulo y se muestra por defecto.<br>
+                De desear cambiarlo, puede usarse el Administrador de Medios para subir
+                uno que se acomode a las preferencias del sitio web.<br>
+                <i class="fa fa-info-circle"></i>
+                Las dimensiones del fondo incluído son <code>1920x100</code> pixeles.
+                De reemplazarlo, deberían tomarse encuenta para evitar efectos no deseados.
+            ]]></description>
+            <type>@gallery:specs_renderer/image_selector</type>
+            <options>
+                <image_size>full</image_size>
+            </options>
+        </specs>
+        
+        <specs key="icon_image">
+            <title>Icono de logo</title>
+            <description><![CDATA[
+                El icono del logo de BardCanvas se incluye con este módulo y se muestra por defecto.<br>
+                De desear cambiarlo, puede usarse el Administrador de Medios para subir
+                uno que se acomode a las preferencias del sitio web.
+                Se ajustará automáticamente al alto del área designada.
+            ]]></description>
+            <type>@gallery:specs_renderer/image_selector</type>
+            <options>
+                <image_size>full</image_size>
+            </options>
+        </specs>
+        
+        <specs key="icon_caption">
+            <title>Leyenda en el icono</title>
+            <description><![CDATA[
+                Especificar la leyenda que se desa mostrar al costado del icono a la izquierda de la barra.<br>
+                De omitirse, se mostrará el contenido de la variable <code>engine.website_name</code>
+                en las preferencias del núcleo.
+            ]]></description>
+            <type>text</type>
+        </specs>
+        
+        <specs key="site_legend">
+            <title>Leyenda del sitio</title>
+            <description><![CDATA[
+                Especificar la leyenda que desea mostrarse a la derecha de la barra.
+                Puede usarse HTML para modificar la apariencia.<br>
+                De omitirse, no se mostrará ninguna leyenda por defecto.
+            ]]></description>
+            <type>code</type>
+        </specs>
+        
+    </settings_data>
+    
+</language>
