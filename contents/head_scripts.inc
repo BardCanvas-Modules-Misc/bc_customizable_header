@@ -51,10 +51,4 @@
         #bc_custom_header_logo .icon { float: none; }
         #bc_custom_header_logo .legend { display: block; margin: 10px 0; padding-right: 0; }
     }
-    
-    /* Overrides */
-    
-    body[data-left-sidebar-visible="true"] #left_sidebar {
-        margin-top: -100px;
-    }
 </style>
